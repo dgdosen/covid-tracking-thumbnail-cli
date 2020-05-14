@@ -3,6 +3,7 @@ const puppeteer = require('puppeteer');
 const getScreenshot = async (url) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+  // await page.goto('http://localhost:5000', {
   await page.goto(`https://covid.agidevelopment.com`, {
     waitUntil: 'networkidle0',
   });
@@ -29,8 +30,8 @@ const getScreenshot = async (url) => {
       clip: {
         x: rect.left - padding,
         y: rect.top - padding,
-        width: rect.width + padding * 2,
-        height: rect.height + padding * 2,
+        width: rect.width + padding * 1,
+        height: rect.height + padding * 1,
       },
     });
   }

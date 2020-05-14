@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dgdosen/covid-tracking-thumbnail-cli/issues"
   },
-  "homepage": "https://github.com/dgdosen/covid-tracking-thumbnail-cli#readme"
+  "homepage": "https://github.com/dgdosen/covid-tracking-thumbnail-cli#readme",
+  "dependencies": {
+    "puppeteer": "^3.0.4"
+  }
 }
